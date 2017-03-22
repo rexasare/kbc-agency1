@@ -50,7 +50,7 @@ class PagesController extends Controller
 
   public function getAllAds(Request $request, $catid){
     $cat_info = Category::where('id', $catid)->first();
-     $adfeatures = Featured_Ad::where('scat_id', 14)->get();
+     $adfeatures = Featured_Ad::skip(4)->take(3)->get();
 
      $query = new Ad();
 
@@ -102,7 +102,7 @@ class PagesController extends Controller
 
     $cat_info = Category::where('id', $cat_id)->first();
     $sub_info = Sub_Category::where('id', $sub_cat)->first();
-    $adfeatures = Featured_Ad::where('scat_id', 14)->get();
+    $adfeatures = Featured_Ad::take(4)->get();
 
 
 
