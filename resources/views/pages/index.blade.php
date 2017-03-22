@@ -174,6 +174,20 @@
 									</div>
                     @endforeach
 								</li>
+                <li>
+                  @foreach ($ad_feats as $ad_feat)
+									<div class="col-md-3 biseller-column">
+										<a href="{{ route('adf.single', ['catid' => $ad_feat->cat_id, 'scatid' => $ad_feat->scat_id, 'id' => $ad_feat->id])}}">
+											<img src="../../images/ads/{{$ad_feat->ad_img}}" alt="" />
+											<span class="price">¢ {{$ad_feat->ad_cost}}</span>
+										</a>
+										<div class="w3-ad-info">
+											<h5>{{$ad_feat->ad_sdesc}}</h5>
+											<span>1 hour ago</span>
+										</div>
+									</div>
+                    @endforeach
+								</li>
 						</ul>
 					</div>
 			</div>

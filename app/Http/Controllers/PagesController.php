@@ -24,14 +24,16 @@ use App\Featured_conditon;
 class PagesController extends Controller
 {
   public function getIndex(){
-    $adfeatures = Featured_Ad::where('scat_id', 14)->get();
-    $ad_features = Featured_Ad::where('scat_id', 15)->get();
+    $adfeatures = Featured_Ad::take(4)->get();
+    $ad_features = Featured_Ad::skip(4)->take(4)->get();
+    $ad_feats = Featured_Ad::skip(8)->take(4)->get();
     $banners = Banner::all();
     $cats = Category::all();
      return view('pages.index')->with('banners', $banners)
                                ->withCats($cats)
                                ->with('adfeatures', $adfeatures)
-                               ->with('ad_features', $ad_features);
+                               ->with('ad_features', $ad_features)
+                               ->with('ad_feats', $ad_feats);
 
 
 
