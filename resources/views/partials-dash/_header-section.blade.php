@@ -23,7 +23,7 @@
           <div class="header">
             <div class="head-t">
               <div class="logo">
-                <a href="index.html"><img src="../../images/logo.png" class="img-responsive" alt=""> </a>
+                <a href="index.html"><img src="{{URL::to('images/logo.png')}}" class="img-responsive" alt=""> </a>
               </div>
             <div class="clearfix"> </div>
           </div>

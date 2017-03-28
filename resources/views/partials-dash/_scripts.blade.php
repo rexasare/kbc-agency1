@@ -19,9 +19,9 @@ $(".sidebar-icon").click(function() {
       });
 </script>
 <!--js -->
-<script src="../../js/jquery.nicescroll.js"></script>
-<script src="../../js/scripts.js"></script>
-<script src="../../js/validation.js"></script>
+<script src="{{URL::to('js/jquery.nicescroll.js')}}"></script>
+<script src="{{URL::to('js/scripts.js')}}"></script>
+<script src="{{URL::to('js/validation.js')}}"></script>
 
-<script src="../../js/bootstrap.min.js"></script>
-<script src="../../js/menu_jquery.js"></script>
+<script src="{{URL::to('js/bootstrap.min.js')}}"></script>
+<script src="{{URL::to('js/menu_jquery.js')}}"></script>

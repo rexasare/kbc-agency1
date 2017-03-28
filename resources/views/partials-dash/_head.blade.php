@@ -6,18 +6,18 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
-<link href="../../css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::to('css/bootstrap.min.css')}}" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="../../css/style1.css" rel='stylesheet' type='text/css' />
+<link href="{{URL::to('css/style1.css')}}" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
-<link href="../../css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="../../css/sweetalert.css">
+<link href="{{URL::to('css/font-awesome.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="{{URL::to('css/sweetalert.css')}}">
 <!-- jQuery -->
 <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <!-- lined-icons -->
-<link rel="stylesheet" href="../css/icon-font.min.css" type='text/css' />
-<script src="../../js/light.js"></script>
-<script src="../../js/sweetalert.min.js"></script>
+<link rel="stylesheet" href="{{URL::to('css/icon-font.min.css')}}../" type='text/css' />
+<script src="{{URL::to('js/light.js')}}"></script>
+<script src="{{URL::to('js/sweetalert.min.js')}}"></script>
 <!-- //lined-icons -->
-<script src="../../js/jquery-1.10.2.min.js"></script>
+<script src="{{URL::to('js/jquery-1.10.2.min.js')}}"></script>
