@@ -1,26 +1,45 @@
 @extends('main')
 
 @section('slider')
-  <div class="slider">
-   <div class="callbacks_container">
-      <ul class="rslides" id="slider">
-        @foreach ($banners as $banner)
 
+  <!-- Carousel
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          @for ($i = 0; $i < $banners->count(); $i++)
+          <li data-target="#myCarousel" data-slide-to="{{$i}}" class="{{($i == 0) ? 'active': ""}}"></li>
+          @endfor
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          @foreach ($banners as $banner)
 
-          <li>
-        <div class="banner{{$banner->id}}" style="background:url(../images/banners/{{$banner->img_file}}) no-repeat 0px 0px;background-size:cover; height:70vh; background-position: center;">
-           <div class="banner-info">
-           {{-- <h3>{{ $banner->img_title }}.</h3>
-           <p>{{ $banner->img_desc }}.</p> --}}
-           </div>
-        </div>
-          </li>
+          <div class="item {{($counter == 0) ? 'active' : ''}}">
+            <img class="first-slide" src="../images/banners/{{$banner->img_file}}" alt="image slide">
+            <div class="container">
+              <div class="carousel-caption">
+                {{-- <h1>Example headline.</h1> --}}
+                {{-- <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> --}}
+                {{-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> --}}
+              </div>
+              <div class="hidden">{!!$counter++!!}</div>
+            </div>
+          </div>
             @endforeach
-       </ul>
-   </div>
- </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- /.carousel -->
+
+
 @endsection
-{{-- {{ URL::to('categories#parentVerticalTab' . $cat->id) }} --}}
+
 @section('content')
 		<!-- content-starts-here -->
 		<div class="main-content">

@@ -28,12 +28,14 @@ class PagesController extends Controller
     $ad_features = Featured_Ad::skip(4)->take(4)->get();
     $ad_feats = Featured_Ad::skip(8)->take(4)->get();
     $banners = Banner::all();
+    $counter = 0;
     $cats = Category::all();
      return view('pages.index')->with('banners', $banners)
                                ->withCats($cats)
                                ->with('adfeatures', $adfeatures)
                                ->with('ad_features', $ad_features)
-                               ->with('ad_feats', $ad_feats);
+                               ->with('ad_feats', $ad_feats)
+                               ->with('counter', $counter);
 
 
 
