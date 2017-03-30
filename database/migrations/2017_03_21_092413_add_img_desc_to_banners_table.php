@@ -13,7 +13,7 @@ class AddImgDescToBannersTable extends Migration
     public function up()
     {
         Schema::table('banners', function (Blueprint $table) {
-            $table->string('img_desc')->after('img_title');
+            $table->string('img_desc')->nullable()->default(null)->after('img_title');
         });
     }
 

@@ -28,7 +28,7 @@ use App\Featured_Ad;
 
 use App\Featured_image;
 
-use App\Featured_condition;
+use App\Featured_conditon;
 
 class AdminController extends Controller
 {
@@ -670,7 +670,7 @@ class AdminController extends Controller
         'ad_condition' => 'required|max:255',
       ]);
 
-      $adfcon = new Featured_condition;
+      $adfcon = new Featured_conditon;
 
       $adfcon->ad_id = $id;
       $adfcon->ad_conditon = $request->ad_condition;

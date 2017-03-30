@@ -18,9 +18,8 @@
             <img class="first-slide" src="../images/banners/{{$banner->img_file}}" alt="image slide">
             <div class="container">
               <div class="carousel-caption">
-                {{-- <h1>Example headline.</h1> --}}
-                {{-- <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> --}}
-                {{-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> --}}
+                 <h1>{{$banner->img_title}}</h1>
+                 <p>{{$banner->img_desc}}</p>
               </div>
               <div class="hidden">{!!$counter++!!}</div>
             </div>

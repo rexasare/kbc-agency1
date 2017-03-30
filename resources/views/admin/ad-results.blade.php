@@ -17,7 +17,7 @@
                                        <div class="row">
                                          <div class="col-sm-12 col-md-12">
                                              <div class="thumbnail">
-                                                 <img src="{{URL::to('images/ads/'.$ad->ad_img)}}" alt="ads-images" >
+                                                 <img src="{{URL::to('images/ads/'.$ad->ad_img)}}" alt="ads-images" style="width:493px; height:250px;">
                                                  <div class="caption">
                                                    <h3>{{$ad->ad_name}}</h3>
                                                    <p>{{ substr($ad->ad_desc, 0, 100)}}{{ strlen($ad->ad_desc) > 100 ? "..." : "" }}</p>

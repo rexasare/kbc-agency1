@@ -63,7 +63,7 @@
       </ul>
     </div>
     <div class="copyrights">
-      <p> © 2017 Kbc-Agency. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> Rex Asare</a></p>
+      <p> © 2017 Kbc-Agency. All Rights Reserved</p>
     </div>
     <div class="clearfix"></div>
   </div>

@@ -21,7 +21,7 @@ class CreateFeaturedAdsTable extends Migration
         $table->text('ad_desc');
         $table->string('ad_img');
         $table->integer('ad_quantity');
-        $table->integer('ad_cost');
+        $table->decimal('ad_cost', 10, 2);
         $table->string('ad_location');
         $table->string('ad_conditon');
         $table->string('ad_telno');

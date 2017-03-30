@@ -75,7 +75,7 @@
           <h4>Tips for Buyers</h4>
             <ol>
               @foreach ($ad_fcons as $ad_fcon)
-                  <li><a href="#">{{$ad_fcon->ad_fconditon}}.</a></li>
+                  <li><a href="#">{{$ad_fcon->ad_conditon}}.</a></li>
               @endforeach
 
 
